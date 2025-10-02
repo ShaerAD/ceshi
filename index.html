@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示外部图片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .tips {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>来自外部项目的图片</h2>
+    <div class="tips">如果图片加载失败，请检查图片地址是否正确且可公开访问。</div>
+    
+    <!-- 直接使用图片的完整URL -->
+    <img src="https://shaerad.github.io/P/1759316051174_edit_98205062592015.png" 
+         alt="来自外部项目的图片"
+         onerror="this.style.display='none'">
+</body>
+</html>
